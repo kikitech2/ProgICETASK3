@@ -19,7 +19,7 @@ public class StaffHiring extends Staff {
 
     @Override
     public int getStaffNumber() {
-        return 0;
+        return staffNumber;
     }
 
     @Override
