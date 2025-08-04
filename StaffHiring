@@ -1,19 +1,19 @@
 public class StaffHiring extends Staff {
-  
+
     public StaffHiring(int staffNumber, String staffLocation) {
         super(staffNumber, staffLocation);
     }
 
-   
+
     @Override
     public String getStaffHiringProcess() {
-        if (staffNumber < 20) { 
+        if (staffNumber < 20) {
             return "YES";
         } else {
             return "NO";
         }
     }
-    
+
     public void printStaffHiring() {
         System.out.println("STAFF HIRING REPORT");
         System.out.println("***********************************");
@@ -21,7 +21,13 @@ public class StaffHiring extends Staff {
         System.out.println("STAFF NUMBER: " + this.getStaffNumber());
         System.out.println("HIRE STAFF: " + this.getStaffHiringProcess());
     }
+
+    @Override
+    public String getStaffHiring() {
+        return "";
+    }
 }
+
 
 
 
