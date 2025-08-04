@@ -1,23 +1,8 @@
-public abstract class Staff implements iStaff {
+public interface iStaff {
 
-    protected int staffNumber;
-    protected String staffLocation;
+    public int getStaffNumber();
 
-    public Staff(int staffNumber, String staffLocation) {
-        this.staffNumber = staffNumber;
-        this.staffLocation = staffLocation;
-    }
+    public String getStaffLocation();
 
-    @Override
-    public int getStaffNumber() {
-        return staffNumber;
-    }
-
-    @Override
-    public String getStaffLocation() {
-        return staffLocation;
-    }
-
-    
-    public abstract String getStaffHiringProcess();
+    public String getStaffHiring();
 }
