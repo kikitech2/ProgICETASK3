@@ -1,0 +1,22 @@
+public class StaffHiring extends Staff{
+
+    public StaffHiring (int staffNumbers, String staffLocation){
+        super(staffNumbers,staffLocation);
+
+    }
+
+    @Override
+    public int getStaffNumber() {
+        return 0;
+    }
+
+    @Override
+    public String getStaffLocation() {
+        return "";
+    }
+
+    @Override
+    public String getStaffHiring() {
+        return "";
+    }
+
