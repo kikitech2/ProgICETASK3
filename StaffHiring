@@ -13,7 +13,7 @@ public class StaffHiring extends Staff {
         System.out.println("HIRE STAFF: " + this.getStaffHiringProcess());
     }
 
-    private String getStaffHiringProcess() {
+    public String getStaffHiringProcess() {
         return "";
     }
 
