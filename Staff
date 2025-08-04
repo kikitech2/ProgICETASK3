@@ -1,0 +1,10 @@
+public abstract class Staff implements iStaff {
+
+ int StaffNumbers;
+String StaffLocation;
+
+public Staff(int staffNumbers, String staffLocation){
+
+    this.StaffLocation = staffLocation;
+    this.StaffNumbers = staffNumbers;
+
