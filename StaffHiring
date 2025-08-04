@@ -14,7 +14,11 @@ public class StaffHiring extends Staff {
     }
 
     public String getStaffHiringProcess() {
-        return "";
+        if (staffNumber< 20) {
+            return "YES";
+        } else {
+            return "NO";
+        }
     }
 
     @Override
@@ -29,14 +33,14 @@ public class StaffHiring extends Staff {
 
     @Override
     public String getStaffHiring() {
-        if (staffNumber< 20) {
-            return "YES";
-        } else {
-            return "NO";
-        }
+        return staffLocation;
     }
 
+
 }
+
+
+
 
 
 
