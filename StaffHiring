@@ -24,7 +24,7 @@ public class StaffHiring extends Staff {
 
     @Override
     public String getStaffLocation() {
-        return "";
+        return staffLocation;
     }
 
     @Override
@@ -35,7 +35,9 @@ public class StaffHiring extends Staff {
             return "NO";
         }
     }
+
 }
+
 
 
 
