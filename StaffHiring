@@ -1,8 +1,20 @@
-public class StaffHiring extends Staff{
+public class StaffHiring extends Staff {
 
-    public StaffHiring (int staffNumbers, String staffLocation){
-        super(staffNumbers,staffLocation);
+    public StaffHiring(int staffNumber, String staffLocation) {
+        super(staffNumber, staffLocation);
+    }
 
+
+    public void printStaffHiring() {
+        System.out.println("STAFF HIRING REPORT");
+        System.out.println("***********************************");
+        System.out.println("LOCATION: " + this.getStaffLocation());
+        System.out.println("STAFF NUMBER: " + this.getStaffNumber());
+        System.out.println("HIRE STAFF: " + this.getStaffHiringProcess());
+    }
+
+    private String getStaffHiringProcess() {
+        return "";
     }
 
     @Override
@@ -17,6 +29,14 @@ public class StaffHiring extends Staff{
 
     @Override
     public String getStaffHiring() {
-        return "";
+        if (StaffNumbers < 20) {
+            return "YES";
+        } else {
+            return "NO";
+        }
     }
+
+}
+
+
 
