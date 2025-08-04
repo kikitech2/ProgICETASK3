@@ -29,14 +29,14 @@ public class StaffHiring extends Staff {
 
     @Override
     public String getStaffHiring() {
-        if (staffNumbers < 20) {
+        if (staffNumber< 20) {
             return "YES";
         } else {
             return "NO";
         }
     }
-
 }
+
 
 
 
